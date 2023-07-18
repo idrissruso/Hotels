@@ -52,8 +52,70 @@
         </nav>
       </header>
       <div class="content">
-        <nav class="navbar">navbar</nav>
-        <main class="detail">detail</main>
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="navbar__list-item navbar__list-item__current">
+              <a href="#?" class="navbar__list-link">
+                <svg class="navbar__list-icon">
+                  <use xlink:href="./img/sprite.svg#icon-home"></use>
+                </svg>
+                <span class="navbar__list-title">Hotel</span>
+              </a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="#?" class="navbar__list-link">
+                <svg class="navbar__list-icon">
+                  <use
+                    xlink:href="./img/sprite.svg#icon-aircraft-take-off"
+                  ></use>
+                </svg>
+                <span class="navbar__list-title">Flight</span>
+              </a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="#?" class="navbar__list-link">
+                <svg class="navbar__list-icon">
+                  <use xlink:href="./img/sprite.svg#icon-key"></use>
+                </svg>
+                <span class="navbar__list-title">Car Rental</span>
+              </a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="#?" class="navbar__list-link">
+                <svg class="navbar__list-icon">
+                  <use xlink:href="./img/sprite.svg#icon-map"></use>
+                </svg>
+                <span class="navbar__list-title">Tours</span>
+              </a>
+            </li>
+          </ul>
+          <div class="navbar__copyright">made by idris with ❤️</div>
+        </nav>
+        <main class="detail">
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-1.jpg"
+                alt="Photo of hotel 1"
+                class="gallery__photo"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-2.jpg"
+                alt="Photo of hotel 2"
+                class="gallery__photo"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-3.jpg"
+                alt="Photo of hotel 3"
+                class="gallery__photo"
+              />
+            </figure>
+          </div>
+        </main>
       </div>
     </div>
   </body>

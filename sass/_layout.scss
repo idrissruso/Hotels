@@ -5,6 +5,7 @@
 }
 .content {
   display: flex;
+  min-height: 50rem;
 }
 .header {
   background-color: var(--color-grey-light-1);
@@ -12,8 +13,8 @@
 }
 
 .navbar {
-  background-color: greenyellow;
-  flex: 0 0 28%;
+  background-color: var(--color-Grey-dark-1);
+  flex: 0 0 18%;
 }
 
 .detail {
