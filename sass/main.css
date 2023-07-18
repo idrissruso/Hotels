@@ -184,6 +184,67 @@ body {
   width: 100%;
 }
 
+.review {
+  border-bottom: 0.1rem solid var(--color-Grey-light-4);
+  display: flex;
+  align-items: center;
+}
+.review__heading {
+  padding: 1rem 2rem;
+  font-weight: 300;
+  color: var(--color-Grey-dark-3);
+  text-transform: uppercase;
+}
+.review__stars {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.review__stars-star {
+  height: 1.7rem;
+  width: 1.7rem;
+  fill: var(--color-Primary);
+}
+.review__location {
+  margin-right: 1.5rem;
+}
+.review__rating {
+  background-color: var(--color-Primary);
+  color: #fff;
+  padding: 0 2.25rem;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.review .btn-inline {
+  border: none;
+  background-color: transparent;
+  color: var(--color-Primary);
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--color-Primary);
+  display: inline-block;
+}
+.review .btn-inline:hover {
+  animation: up 0.9s infinite;
+}
+
+@keyframes up {
+  0% {
+    box-shadow: none;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: none;
+    transform: scale(1);
+  }
+}
 .wrapper {
   max-width: 120rem;
   margin: 8rem auto;
@@ -198,6 +259,7 @@ body {
 .header {
   background-color: var(--color-grey-light-1);
   height: 7rem;
+  border-bottom: 0.1rem solid var(--color-Grey-light-4);
 }
 
 .navbar {
@@ -206,6 +268,5 @@ body {
 }
 
 .detail {
-  background-color: aquamarine;
   flex: 1;
 }/*# sourceMappingURL=main.css.map */

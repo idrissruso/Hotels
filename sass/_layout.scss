@@ -10,6 +10,7 @@
 .header {
   background-color: var(--color-grey-light-1);
   height: 7rem;
+  border-bottom: $line;
 }
 
 .navbar {
@@ -18,6 +19,5 @@
 }
 
 .detail {
-  background-color: aquamarine;
   flex: 1;
 }

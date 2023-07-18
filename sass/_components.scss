@@ -165,3 +165,80 @@
     width: 100%;
   }
 }
+
+.review {
+  border-bottom: $line;
+  display: flex;
+  align-items: center;
+
+  &__heading {
+    padding: 1rem 2rem;
+    font-weight: 300;
+    color: var(--color-Grey-dark-3);
+    text-transform: uppercase;
+  }
+
+  &__stars {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    &-star {
+      height: 1.7rem;
+      width: 1.7rem;
+      fill: var(--color-Primary);
+    }
+  }
+
+  &__location {
+    margin-right: 1.5rem;
+  }
+
+  &__rating {
+    background-color: var(--color-Primary);
+    color: #fff;
+
+    padding: 0 2.25rem;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-overage {
+    }
+
+    &-count {
+    }
+  }
+
+  .btn-inline {
+    border: none;
+    background-color: transparent;
+    color: var(--color-Primary);
+    font-size: 1.4rem;
+    border-bottom: 2px solid var(--color-Primary);
+    display: inline-block;
+
+    &:hover {
+      animation: up 0.9s infinite;
+    }
+  }
+}
+
+@keyframes up {
+  0% {
+    box-shadow: none;
+    transform: scale(1);
+  }
+
+  50% {
+    box-shadow: 0 1rem 4rem rgba(black, 0.2);
+    transform: scale(1.05);
+  }
+
+  100% {
+    box-shadow: none;
+    transform: scale(1);
+  }
+}
