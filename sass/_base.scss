@@ -13,3 +13,31 @@
   --color-Grey-dark-2: #777;
   --color-Grey-dark-3: #999;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  font-size: 1.4rem;
+  font-weight: 400;
+  background-image: linear-gradient(
+    to left bottom,
+    var(--color-Primary),
+    var(--color-Primary-dark)
+  );
+  background-size: cover;
+  height: 100vh;
+}

@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>trillo &mdash; Your all-in-one booking app</title>
-    </head>
-    <body>
-        
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Hotellio &mdash; Your all-in-one booking app</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <img src="./img/logo.png" alt="logo" class="header__logo" />
+        <form action="#?" class="form">
+          <input type="text" class="form__input" />
+          <button type="submit">
+            <svg class="form__search">
+              <use xlink:href="./img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="./img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">7</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="./img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">12</span>
+          </div>
+          <div class="user-nav__profile">
+            <img
+              src="./img/user.jpg"
+              alt="profile picture"
+              class="user-nav__profile-img"
+            /><span class="user-nav__profile-name">Jonas</span>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="navbar">navbar</nav>
+        <main class="detail">detail</main>
+      </div>
+    </div>
+  </body>
 </html>

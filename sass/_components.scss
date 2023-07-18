@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__logo {
+    height: 5rem;
+  }
+}
+
+.form {
+  flex: 0 0 40%;
+  &__input {
+  }
+
+  &__search {
+    height: 1.7rem;
+    width: 1.7rem;
+  }
+}
+
+.user-nav {
+  display: flex;
+  &__icon-box {
+  }
+
+  &__icon {
+    height: 1.7rem;
+    width: 1.7rem;
+  }
+
+  &__notification {
+  }
+
+  &__profile {
+    &-img {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+    }
+
+    &-name {
+    }
+  }
+}

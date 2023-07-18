@@ -1,12 +1,90 @@
 :root {
-  --color-Primary:#eb2f64
-  --color-Primary light: #FF3366
-  --color-Primary dark: #BA265D
-  --color-Grey-light-1: #faf9f9
-  --color-Grey-light-2: #f4f2f2
-  --color-Grey-light-3: #f0eeee
-  --color-Grey-light-4: #ccc
-  --color-Grey-dark-1: #333
-  --color-Grey-dark-2: #777
-  --color-Grey-dark-3: #999 ;
+  --color-Primary: #eb2f64;
+  --color-Primary-light: #ff3366;
+  --color-Primary-dark: #ba265d;
+  --color-Grey-light-1: #faf9f9;
+  --color-Grey-light-2: #f4f2f2;
+  --color-Grey-light-3: #f0eeee;
+  --color-Grey-light-4: #ccc;
+  --color-Grey-dark-1: #333;
+  --color-Grey-dark-2: #777;
+  --color-Grey-dark-3: #999;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  font-size: 1.4rem;
+  font-weight: 400;
+  background-image: linear-gradient(to left bottom, var(--color-Primary), var(--color-Primary-dark));
+  background-size: cover;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  height: 5rem;
+}
+
+.form {
+  flex: 0 0 40%;
+}
+.form__search {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+.user-nav {
+  display: flex;
+}
+.user-nav__icon {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+.user-nav__profile-img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+.wrapper {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: #fff;
+}
+
+.content {
+  display: flex;
+}
+
+.header {
+  background-color: var(--color-grey-light-1);
+  height: 7rem;
+}
+
+.navbar {
+  background-color: greenyellow;
+  flex: 0 0 28%;
+}
+
+.detail {
+  background-color: aquamarine;
+  flex: 1;
 }/*# sourceMappingURL=main.css.map */

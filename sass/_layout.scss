@@ -1,0 +1,22 @@
+.wrapper {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: #fff;
+}
+.content {
+  display: flex;
+}
+.header {
+  background-color: var(--color-grey-light-1);
+  height: 7rem;
+}
+
+.navbar {
+  background-color: greenyellow;
+  flex: 0 0 28%;
+}
+
+.detail {
+  background-color: aquamarine;
+  flex: 1;
+}
