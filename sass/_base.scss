@@ -15,7 +15,12 @@
 }
 
 $line: 0.1rem solid var(--color-Grey-light-3);
-
+$bp-largest: 75em;
+$bp-large: 68.75em;
+$bp-medium: 56.25em;
+$bp-small: 42.18em;
+$bp-smallest: 37.5em;
+$bp-smallest-1: 31.25em;
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +35,9 @@ $line: 0.1rem solid var(--color-Grey-light-3);
 html {
   font-size: 62.5%;
   font-family: 'Open Sans', sans-serif;
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
 }
 
 body {

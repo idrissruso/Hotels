@@ -2,10 +2,18 @@
   max-width: 120rem;
   margin: 8rem auto;
   background-color: #fff;
+
+  @media only screen and (max-width: $bp-largest) {
+    min-width: 100%;
+    margin: 0;
+  }
 }
 .content {
   display: flex;
   min-height: 50rem;
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
 }
 .header {
   background-color: var(--color-grey-light-1);

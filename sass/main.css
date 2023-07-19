@@ -27,6 +27,11 @@ html {
   font-size: 62.5%;
   font-family: "Open Sans", sans-serif;
 }
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-size: 1.4rem;
@@ -39,6 +44,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media only screen and (max-width: 31.25em) {
+  .header {
+    height: 11rem !important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 .header__logo {
   width: 5rem;
@@ -71,6 +83,12 @@ body {
 .form__search {
   height: 1.7rem;
   width: 1.7rem;
+}
+@media only screen and (max-width: 31.25em) {
+  .form {
+    order: 2;
+    flex: 1;
+  }
 }
 
 .user-nav {
@@ -128,7 +146,15 @@ body {
   justify-content: space-between;
 }
 .navbar__list {
+  margin-top: 3.5rem;
   list-style: none;
+}
+@media only screen and (max-width: 56.25em) {
+  .navbar__list {
+    display: flex;
+    margin-top: 0;
+    justify-content: space-around;
+  }
 }
 .navbar__list-item {
   display: flex;
@@ -155,8 +181,15 @@ body {
   width: 100%;
 }
 .navbar__list-item__current {
-  margin-top: 3.5rem;
   background-color: var(--color-Primary);
+}
+@media only screen and (max-width: 56.25em) {
+  .navbar__list-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
 }
 .navbar__list-link, .navbar__list-link:visited, .navbar__list-link:link {
   z-index: 200;
@@ -164,6 +197,13 @@ body {
   text-decoration: none;
   color: var(--color-Grey-light-3);
   text-transform: uppercase;
+}
+@media only screen and (max-width: 56.25em) {
+  .navbar__list-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .navbar__list-icon {
   height: 1.7rem;
@@ -174,6 +214,11 @@ body {
 .navbar__copyright {
   color: var(--color-Grey-dark-3);
   margin: 0 auto 1rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .navbar__copyright {
+    display: none;
+  }
 }
 
 .gallery {
@@ -190,11 +235,22 @@ body {
   align-items: center;
   background-color: #fff;
 }
+@media only screen and (max-width: 37.5em) {
+  .review {
+    flex-wrap: wrap;
+  }
+}
 .review__heading {
   padding: 1rem 2rem;
   font-weight: 300;
   color: var(--color-Grey-dark-3);
   text-transform: uppercase;
+}
+@media only screen and (max-width: 37.5em) {
+  .review__heading {
+    padding: 0;
+    font-size: 1.6rem;
+  }
 }
 .review__stars {
   margin-left: 2rem;
@@ -256,12 +312,28 @@ body {
   display: flex;
   padding: 5rem 3rem;
 }
+@media only screen and (max-width: 68.75em) {
+  .main-content {
+    padding: 1rem 0.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .main-content {
+    flex-direction: column;
+  }
+}
 
 .description {
   background-color: #fff;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
   padding: 3rem;
   margin-right: 4.5rem;
+}
+@media only screen and (max-width: 68.75em) {
+  .description {
+    padding: 3rem;
+    margin-right: 0.5rem;
+  }
 }
 
 .paragraph {
@@ -373,6 +445,11 @@ body {
   font-family: sans-serif;
   z-index: 1;
 }
+@media only screen and (max-width: 37.5em) {
+  .user-reviews__review {
+    margin: 3rem;
+  }
+}
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
@@ -435,6 +512,7 @@ body {
 }
 .cta__button:hover {
   animation: none;
+  background-image: linear-gradient(to left bottom, var(--color-Primary-dark), var(--color-Primary));
 }
 
 .wrapper {
@@ -442,10 +520,21 @@ body {
   margin: 8rem auto;
   background-color: #fff;
 }
+@media only screen and (max-width: 75em) {
+  .wrapper {
+    min-width: 100%;
+    margin: 0;
+  }
+}
 
 .content {
   display: flex;
   min-height: 50rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .content {
+    flex-direction: column;
+  }
 }
 
 .header {
