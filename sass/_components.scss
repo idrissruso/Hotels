@@ -310,3 +310,64 @@
     border: 3px solid #fff;
   }
 }
+
+.user-reviews {
+  &__review {
+    overflow: hidden;
+    z-index: 20;
+    position: relative;
+    background-color: #fff;
+    padding: 3rem;
+    box-shadow: 0 1rem 3rem rgba(black, 0.25);
+    &:not(:last-of-type) {
+      margin-bottom: 3rem;
+    }
+    &__text {
+      z-index: 2;
+      position: relative;
+    }
+
+    &-photo {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+    }
+
+    &__user {
+      display: flex;
+      align-items: center;
+      margin-top: 3rem;
+
+      &-box {
+        margin-right: auto;
+        margin-left: 1rem;
+      }
+
+      &-name {
+        font-weight: 600;
+        font-size: 1.2rem;
+      }
+
+      &-date {
+        font-weight: 300;
+        font-size: 1.2rem;
+      }
+    }
+
+    &__rating {
+      font-size: 2rem;
+      color: var(--color-Primary);
+    }
+
+    &::before {
+      content: '\201C';
+      position: absolute;
+      top: -5rem;
+      left: -1rem;
+      font-size: 25rem;
+      color: var(--color-Grey-light-3);
+      font-family: sans-serif;
+      z-index: 1;
+    }
+  }
+}
